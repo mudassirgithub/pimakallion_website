@@ -1,0 +1,277 @@
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
+#hero-img {
+  text-align: center;
+}
+
+h1,
+h2 {
+  margin-bottom: 2.5rem !important;
+}
+
+#become-succ {
+  height: auto;
+  padding: 4rem;
+}
+
+#features {
+  padding: 4rem;
+  height: auto;
+  background-color: rgb(245, 241, 241);
+}
+
+.card {
+  border: 0.5px solid white !important;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 15%;
+}
+
+.shaded {
+  color: rgb(136, 130, 130);
+}
+
+.footer {
+  height: 130px !important;
+}
+
+#pricing {
+  padding: 4rem;
+  text-align: center;
+}
+
+.price-card {
+  background: whitesmoke;
+  text-align: center;
+  padding: 2rem;
+  width: auto;
+  overflow: hidden;
+}
+
+.plan-name {
+  font-size: 2rem;
+}
+
+.price {
+  font-size: 3em;
+}
+
+#social {
+  padding: 3rem;
+
+  background: #833ab4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#white {
+  color: white;
+}
+
+.about-content {
+  padding: 3rem;
+  padding-top: 6rem;
+}
+
+#contact {
+  height: auto;
+  padding: 8rem 2rem;
+  background: rgb(238, 245, 237);
+}
+
+label {
+  padding-top: 1.5rem;
+}
+
+#footer-content .buttons {
+  justify-content: center !important;
+}
+
+#test-div {
+  height: 200px;
+}
+
+#footer-content {
+  margin-bottom: 20px;
+}
+
+#footer {
+  height: 500px;
+}
+
+.navbar-menu.is-active {
+  animation: navAnim 0.2s ease-in-out;
+}
+
+@keyframes navAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  20% {
+    display: block;
+    opacity: 0.2;
+    height: 26px;
+  }
+  40% {
+    opacity: 0.4;
+    height: 48px;
+  }
+  50% {
+    opacity: 0.5;
+    height: 60px;
+  }
+  70% {
+    opacity: 0.7;
+    height: 90px;
+  }
+  100% {
+    opacity: 1;
+    height: auto;
+  }
+}
+
+#hr-line {
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.accent-1 {
+  color: #045547;
+}
+.accent-2 {
+  color: var(--accent-2);
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  color: unset;
+  text-decoration: unset;
+}
+.nav {
+  margin: 0 var(--margin-x);
+}
+.nav__list {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  grid-gap: 1em;
+}
+
+.nav__list-item--bordered {
+  border: 1px solid var(--accent-1);
+  border-radius: 20px;
+  color: var(--accent-1);
+  padding: 0.5em 1.1em;
+}
+.pricing {
+  text-align: center;
+  margin: 0 1em;
+}
+
+.plans__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+.plan__item {
+  --radius: 10px;
+  border-radius: var(--radius);
+  box-shadow: 1px 2px 15px rgba(80, 80, 80, 0.12);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.plan__item--active {
+  box-shadow: 0 0 55px rgba(80, 80, 80, 0.25);
+
+  height: auto;
+}
+.plan__title {
+  color: var(--accent-1);
+  margin-bottom: -0.5em;
+}
+.plan__price {
+  font-size: 2.5em;
+}
+.plan__price:before {
+  content: "₹";
+  font-size: 1rem;
+}
+.plan__cta-link {
+  color: .plan__cta-link--active;
+  padding: 1em 5em;
+  border-radius: 0 0 var(10px) var(10px);
+}
+
+.plan__cta-link--active {
+  background: #6865ff;
+  color: white;
+}
+.plan__feature-list {
+  display: grid;
+  grid-row-gap: 0.6em;
+  justify-content: space-around;
+}
+
+.plans__special-offer a {
+  color: var(--accent-2);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-2);
+}
+
+@media only screen and (min-width: 618px) and (max-width: 900px) {
+  .plan__item--active {
+    order: 1;
+  }
+}
+.mt50 {
+  margin-top: 3rem;
+}
+
+#bg-button {
+  background-color: rgb(11, 165, 119);
+  color: white;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.mt150 {
+  margin-top: 6em;
+}
+
+#blogo {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  max-height: 4rem;
+}
